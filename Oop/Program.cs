@@ -11,13 +11,35 @@ namespace Oop
         static void Main(string[] args)
         {
             Calculator calc = new Calculator();
-            int x = 3;
-            int y = 5;
+       
             int sum = 0;
+            sum = calc.Multiply(3, 5);
+            Console.WriteLine("sum of {0}", sum);
 
-            sum = calc.Multiply(x, y);
-            Console.WriteLine("sum of {0} * {1} * {2}", x, y, sum);
+
+            Addition Adder = new Addition();
+
+            int Compute = 0;
+            Compute = Adder.Add(3, 5);
+            Console.WriteLine("sum of {0}", Compute);
+
+
+            Subtract takeaway = new Subtract();
+            int minus = 0;
+            minus = takeaway.Sub(3, 5);
+            Console.WriteLine("sum of {0}", minus);
+
+
+            Divide Division = new Divide();
+
+            int Div = 0;
+            Div = Division.Div(12, 3);
+            Console.WriteLine("sum of {0}", Div);
+
+
             Console.ReadLine();
+
+
         }
     }
 }
